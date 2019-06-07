@@ -2,37 +2,39 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import header from './header.module.css'
+import styles from './header.module.css'
+import data from '../../data.json'
+
+
+
+let links = data.links.map(link => {
+  return (
+    <Link
+      className={styles.anchorLink}
+      to="https://www.google.com"
+    >
+    {link}
+  </Link>
+  )
+})
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div classname="header">
-      <h1 style={{ margin: 0 }}>
+
+  <div className={styles.nav}>
+    <div className={styles.header}>
         <Link
+          className={styles.headerLink}
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+          >
           {siteTitle}
         </Link>
-      </h1>
-      <p style={{ margin: 0 }}>
-        <Link
-          to="www.google.com"
-          >
-          LinkenIn
-        </Link>
-      </p>
+      <div className={styles.anchorLinks}>
+        {links}
+      </div>
     </div>
-  </header>
+  </div>
 )
+
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -41,5 +43,6 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
+
 
 export default Header
