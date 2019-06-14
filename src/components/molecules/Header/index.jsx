@@ -2,14 +2,16 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Logo from '../../atoms/Logo'
 import styles from './header.module.css'
-import data from '../../data.json'
+import data from '../../../data.json'
 
 
 
 let links = data.links.map(link => {
   return (
     <Link
+      key={link}
       className={styles.anchorLink}
       to="https://www.google.com"
     >
@@ -26,7 +28,9 @@ const Header = ({ siteTitle }) => (
           className={styles.headerLink}
           to="/"
           >
-          {siteTitle}
+          <Logo
+            siteTitle={ siteTitle }
+          />
         </Link>
       <div className={styles.anchorLinks}>
         {links}

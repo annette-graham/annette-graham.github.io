@@ -1,1 +1,10 @@
-@import '../components/Header/header.modules.css';
+/*
+  atoms
+*/
+@import '../components/atoms/Header/header.modules.css';
+
+
+/*
+  molecules
+*/
+@import '../components/molecules/Logo/logo.modules.css';
