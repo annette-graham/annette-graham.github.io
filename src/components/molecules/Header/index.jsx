@@ -20,6 +20,7 @@ let links = data.links.map(link => {
   )
 })
 
+
 const Header = () => (
 
   <div className={styles.nav}>
