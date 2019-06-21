@@ -15,28 +15,20 @@ let links = data.links.map(link => {
       className={styles.anchorLink}
       to="https://www.google.com"
     >
-    {link}
-  </Link>
+      {link}
+    </Link>
   )
 })
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
 
   <div className={styles.nav}>
-    <div className={styles.header}>
-        <Link
-          className={styles.headerLink}
-          to="/"
-          >
-          <Logo
-            siteTitle={ siteTitle }
-          />
-        </Link>
-      <div className={styles.anchorLinks}>
-        {links}
-      </div>
+    <Logo />
+    <div className={styles.anchorLinks}>
+      {links}
     </div>
   </div>
+
 )
 
 
