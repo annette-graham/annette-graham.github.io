@@ -21,16 +21,19 @@ let links = data.links.map(link => {
 })
 
 
-const Header = () => (
+const Header = (props) => {
 
-  <div className={styles.nav}>
-    <Logo />
-    <div className={styles.anchorLinks}>
-      {links}
+  const wee = props.class
+  console.log(wee)
+  return (
+    <div className={styles[wee]}>
+      <Logo />
+      <div className={styles.anchorLinks}>
+        {links}
+      </div>
     </div>
-  </div>
-
-)
+  )
+}
 
 
 Header.propTypes = {

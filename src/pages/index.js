@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import styles from './body.module.css'
 import SEO from "../components/seo"
@@ -14,12 +13,15 @@ const App = () => {
   return (
     <div>
       <SEO title="Annette Graham" keywords={[`gatsby`, `application`, `react`]} />
-      <Header />
+      <Header class="nav" />
       <div className={styles.body}>
         <Home />
+      </div>
+      <Header class="sticky" />
+      <div className={styles.body}>
+        <br />
         <About />
       </div>
-      <Link to="/page-2/">Go to page 2</Link>
     </div>
   )
 }
