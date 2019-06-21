@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import styles from './body.module.css'
 import Header from "./molecules/Header"
 import "./layout.css"
 
@@ -26,11 +27,11 @@ const Layout = ({ children }) => (
 
     render={data => (
       <>
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-        />
+        <Header />
         <div>
-          <main>{children}</main>
+          <main className={styles.body}>
+            {children}
+          </main>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
