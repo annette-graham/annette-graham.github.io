@@ -1,0 +1,18 @@
+.logo {
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  margin-block-start: -0.7em;
+}
+
+.logoLink {
+  color: #645F6B;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logoImage {
+  opacity: 0.75;
+  width: 58px;
+  height: auto;
+}
