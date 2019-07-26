@@ -4,7 +4,7 @@ const Home = () => {
 
   return (
 
-    <div>
+    <div className="main-body">
       <h1>I AM ANNETTE AND I AM A SOFTWARE ENGINEER OKAY.<br/>GOSH</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>

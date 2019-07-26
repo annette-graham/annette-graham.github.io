@@ -23,10 +23,10 @@ let links = data.links.map(link => {
 
 const Header = (props) => {
 
-  const wee = props.class
-  console.log(wee)
+  const test = props.class
+  console.log(test)
   return (
-    <div className={styles[wee]}>
+    <div className={styles[test]}>
       <Logo />
       <div className={styles.anchorLinks}>
         {links}
