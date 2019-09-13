@@ -7,7 +7,6 @@ import styles from './header.module.css'
 import data from '../../../data.json'
 
 
-
 let links = data.links.map(link => {
   return (
     <Link
@@ -23,10 +22,8 @@ let links = data.links.map(link => {
 
 const Header = (props) => {
 
-  const test = props.class
-  console.log(test)
   return (
-    <div className={styles[test]}>
+    <div className={[styles.nav, styles.opaque].join(' ')}>
       <Logo />
       <div className={styles.anchorLinks}>
         {links}
