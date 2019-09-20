@@ -1,20 +1,18 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import styles from './logo.module.css'
-
 import sloth from '../../../images/yoga-sloth.png'
 
 const Logo = ({ siteTitle }) => {
 
   return (
-    <div className={styles.logo}>
+    <div className='logo'>
       <Link
-        className={styles.logoLink}
+        className='logoLink'
         to="/"
       >
-        <img alt="" src={sloth} className={styles.logoImage}/>
-        <span className={styles.logoText}>A.G</span>
+        <img alt="" src={sloth} className='logoImage'/>
+        <span className='logoText'>A.G</span>
       </Link>
     </div>
   )

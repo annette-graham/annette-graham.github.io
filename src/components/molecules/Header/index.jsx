@@ -11,7 +11,7 @@ let links = data.links.map(link => {
   return (
     <Link
       key={link}
-      className={styles.anchorLink}
+      className='anchorLink'
       to="https://www.google.com"
     >
       {link}
@@ -23,9 +23,9 @@ let links = data.links.map(link => {
 const Header = (props) => {
 
   return (
-    <div className={[styles.nav, styles.opaque].join(' ')}>
+    <div className='nav'>
       <Logo />
-      <div className={styles.anchorLinks}>
+      <div className='anchorLinks'>
         {links}
       </div>
     </div>
