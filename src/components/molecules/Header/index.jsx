@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Logo from '../../atoms/Logo'
-import styles from './header.module.css'
 import data from '../../../data.json'
 
 
@@ -20,10 +19,10 @@ let links = data.links.map(link => {
 })
 
 
-const Header = (props) => {
+const Header = ({className}) => {
 
   return (
-    <div className='nav'>
+    <div className={className}>
       <Logo />
       <div className='anchorLinks'>
         {links}

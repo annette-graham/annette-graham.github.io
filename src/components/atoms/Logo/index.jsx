@@ -11,7 +11,7 @@ const Logo = ({ siteTitle }) => {
         className='logoLink'
         to="/"
       >
-        <img alt="" src={sloth} className='logoImage'/>
+        <img alt="Sloth doing tree pose" src={sloth} className='logoImage'/>
         <span className='logoText'>A.G</span>
       </Link>
     </div>
