@@ -6,7 +6,7 @@ const Tech = () => {
 
   return (
 
-    <div id="/tech" className='about'>
+    <section id="/tech" className='about'>
       <div className="body">
         <div className='body-content'>
         <img alt="Sloth doing tree pose" src={sloth} className='logoImage' />
@@ -24,7 +24,7 @@ const Tech = () => {
           <br />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

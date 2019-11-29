@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
 
-    <div className="body home-body">
+    <section className="body home-body">
        <div className='home-content'>
           <img alt="Sloth doing tree pose" src={sloth} className='logoImage' />
           <h1 className="header-text">I AM ANNETTE AND I AM A SOFTWARE ENGINEER OKAY.<br />GOSH</h1>
@@ -14,7 +14,7 @@ const Home = () => {
           <br/>
           <a href='#/about' className='anchorLink'>Down Arrow</a>
        </div>
-    </div>
+    </section>
 
   )
 }

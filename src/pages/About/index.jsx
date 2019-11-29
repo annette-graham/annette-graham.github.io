@@ -4,10 +4,10 @@ import React from "react"
 
 const About = () => {
   return (
-    <div id="/about" className='about'>
+    <section id="/about" className='about target'>
       <div className="body">
-        <div className='body-content'>
-          <h1>ABOUT ME HOLY MOLY</h1>
+        <div className='body-content target'>
+          <h1 className="header-text">ABOUT ME HOLY MOLY</h1>
           <p>This is what I am about</p>
           <p>This is what I am about</p>
           <p>This is what I am about</p>
@@ -31,7 +31,7 @@ const About = () => {
           <a href="/" className='anchorLink'>Go back to the homepage</a>
         </div>   
       </div>
-    </div>
+    </section>
   )
 }
 
