@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import jump from 'jump.js'
 
 import Logo from '../../atoms/Logo'
 import data from '../../../data.json'
@@ -10,6 +11,7 @@ let links = data.links.map(link => {
     <a
       href={link.url}
       key={link.name}
+      id={link.name}
       className='anchorLink'>
       {link.name}
     </a>
