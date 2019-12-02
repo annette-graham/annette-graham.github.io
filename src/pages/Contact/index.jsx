@@ -17,6 +17,8 @@ const Contact = () => {
           <p>I got bloody facebook.</p>
           <p>I got codepen.</p>
           <p>what the heck else you want??</p>
+          <p>LinkedIn?</p>
+          <p>Coz I got that too.</p>
           <br />
         </div>
       </div>
