@@ -1,11 +1,12 @@
 .logo {
   position: absolute;
-  font-weight: bold;
   text-align: center;
-  margin-block-start: -0.7em;
+  margin-block-start: -0rem;
 }
 
 .logoLink {
+  display: flex;
+  align-items: center;
   color: #645F6B;
   text-decoration: none;
   cursor: pointer;
@@ -15,5 +16,10 @@
   opacity: 0.75;
   width: 58px;
   height: auto;
-  margin-left: 40px;
+  margin-left: 10px;
+}
+
+.logoText {
+  font-weight: bold;
+  margin-left: -0.5rem;
 }

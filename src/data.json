@@ -1,8 +1,8 @@
 {
   "links": [
-    "About Me |",
-    "Projects  |",
-    "Technology |",
-    "Contact Me"
+    {"name": "About Me |", "url": "#/about"},
+    {"name": "Projects  |", "url": "#/projects"},
+    {"name": "Technology |", "url": "#/tech"},
+    {"name": "Contact Me", "url": "#/contact"}
   ]
 }

@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types'
+import React from 'react'
+import jump from 'jump.js'
 
 import Logo from '../../atoms/Logo'
 import data from '../../../data.json'
@@ -8,13 +8,13 @@ import data from '../../../data.json'
 
 let links = data.links.map(link => {
   return (
-    <Link
-      key={link}
-      className='anchorLink'
-      to="https://www.google.com"
-    >
-      {link}
-    </Link>
+    <a
+      href={link.url}
+      key={link.name}
+      id={link.name}
+      className='anchorLink'>
+      {link.name}
+    </a>
   )
 })
 
@@ -22,12 +22,16 @@ let links = data.links.map(link => {
 const Header = ({className}) => {
 
   return (
-    <div className={className}>
+    <header className={`root ${className}`}>
       <Logo />
       <div className='anchorLinks'>
         {links}
+        {/* <a href='#/about' className='anchorLink'>About Me  |</a>
+        <a href='#/projects' className='anchorLink'>Projects  |</a>
+        <a href='#/tech' className='anchorLink'>Technology  |</a>
+        <a href='#/contact' className='anchorLink'>Contact Me</a> */}
       </div>
-    </div>
+    </header>
   )
 }
 
