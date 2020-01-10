@@ -1,0 +1,38 @@
+.image {
+  opacity: 0.75;
+  z-index: -10;
+}
+
+.hi-image {
+  width: 150px;
+  right: 25rem;
+  margin-top: 20rem;
+  position: absolute;
+}
+
+.me-image {
+  height: 250px;
+  left: 20rem;
+  margin-top: 2rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.reading-image {
+  width: 58px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.hanging-image {
+  width: 58px;
+  height: auto;
+  margin-left: 10px;
+  z-index: -100;
+}
+
+.yoga-image {
+  width: 58px;
+  height: auto;
+  margin-left: 10px;
+}
