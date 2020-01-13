@@ -1,5 +1,5 @@
 import React from 'react'
-import sloth from '../../images/yoga-sloth.png'
+import sloth from '../../images/hangy-sloth.png'
 
 
 const Tech = () => {

@@ -1,5 +1,4 @@
 import React from "react"
-<<<<<<< HEAD
 import sloth from '../../images/happy-sloth.jpg'
 
 const About = () => {
@@ -35,42 +34,6 @@ const About = () => {
         <a href="/" className='anchorLink'>Go back to the homepage</a>
       </div>   
     </section>
-=======
-import { Link } from "gatsby"
-
-import Header from "../../components/molecules/Header"
-
-import SEO from "../../components/seo"
-
-const About = () => {
-  return (
-    <div className="body">
-      <SEO title="About" />
-      <Header className="sticky" />
-      <h1>ABOUT ME HOLY MOLY</h1>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-      <p>This is what I am about</p>
-
-      <Link to="/">Go back to the homepage</Link>
-    </div>
->>>>>>> 9e4cfeb0561a794756bd9c27129cab7f39c7534f
   )
 }
 
