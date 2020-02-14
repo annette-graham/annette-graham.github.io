@@ -1,15 +1,20 @@
 import React from 'react'
 import sloth from '../../images/yoga-sloth.png'
 
+import Heading from '../../components/atoms/Heading'
+
 
 const Home = () => {
+   
+  const arr = ['I AM ANNETTE AND I AM A SOFTWARE ENGINEER OKAY.', <br/>, 'GOSH']
 
   return (
-
     <section className="body home-body">
       <div className='home-content'>
         <img alt="Sloth doing tree pose" src={sloth} className='logoImage' />
-        <h1 className="header-text">I AM ANNETTE AND I AM A SOFTWARE ENGINEER OKAY.<br />GOSH</h1>
+        <Heading
+          title={arr}
+        />
         <p>Now go build something great.</p>
         <br/>
         <a href='#/about' className='anchorLink'>Down Arrow</a>
