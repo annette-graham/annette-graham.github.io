@@ -1,8 +1,15 @@
 @import '../images/_styles';
 
+/*    atoms    */
+@import '../components/atoms/Input/_styles';
 @import '../components/atoms/Logo/_styles';
 
+/*    molecules    */
 @import '../components/molecules/Header/_styles';
+@import '../components/molecules/Form/_styles';
 
+/*    pages    */
 @import '../pages/_styles';
+@import '../pages/Contact/_styles';
 @import '../pages/Home/_styles';
+
