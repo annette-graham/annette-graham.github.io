@@ -1,0 +1,15 @@
+.tech-container {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: center;
+}
+
+.tech-section {
+    padding-left: 6rem;
+    font-size: 12px;
+    color: #645f6b;
+    text-align: left;
+}
