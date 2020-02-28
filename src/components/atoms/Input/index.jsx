@@ -10,9 +10,10 @@ const Input = ({
     const Tag = tag
 
     return (
-        <div>
-            <label>{label}</label>
+        <div className='field'>
+            <label classname='form-label'>{label}</label>
             <Tag 
+                className='form-input'
                 type="text"
                 name={name} 
                 placeholder={placeholder}
