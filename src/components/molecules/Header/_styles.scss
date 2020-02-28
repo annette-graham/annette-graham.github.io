@@ -17,6 +17,45 @@
   margin-block-end: 0.3em;
 }
 
+.header-link:hover,
+.header-link:before {
+  letter-spacing: 0;
+}
+
+.header-link:hover,
+.header-link:active {
+  letter-spacing: 5px;
+  transition: letter-spacing 350ms ease;
+}
+
+.header-link:after,
+.header-link:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#b1afb5, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 4px auto;
+  position: relative;
+  transition: all 800ms ease;
+  width: 0;
+}
+
+.header-link:hover:after,
+.header-link:hover:before {
+  backface-visibility: hidden;
+  border-color: #b1afb5;
+  transition: width 350ms ease;
+  width: 60%;
+}
+
+.header-link:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 60%;
+}
+
+
 .sticky {
   position: fixed;
   left: 0;
