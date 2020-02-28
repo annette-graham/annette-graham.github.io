@@ -15,7 +15,7 @@ const Home = () => {
         <Heading
           title={arr}
         />
-        <p>Now go build something great.</p>
+        <p>Welcome to my website that I built for myself.</p>
         <br/>
         <a href='#/about' className='anchorLink'>Down Arrow</a>
       </div>
