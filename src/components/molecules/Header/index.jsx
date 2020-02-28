@@ -12,7 +12,7 @@ let links = data.links.map(link => {
       href={link.url}
       key={link.name}
       id={link.name}
-      className='anchorLink'>
+      className='header-link anchorLink'>
       {link.name}
     </a>
   )
@@ -26,10 +26,6 @@ const Header = ({className}) => {
       <Logo />
       <div className='anchorLinks'>
         {links}
-        {/* <a href='#/about' className='anchorLink'>About Me  |</a>
-        <a href='#/projects' className='anchorLink'>Projects  |</a>
-        <a href='#/tech' className='anchorLink'>Technology  |</a>
-        <a href='#/contact' className='anchorLink'>Contact Me</a> */}
       </div>
     </header>
   )
