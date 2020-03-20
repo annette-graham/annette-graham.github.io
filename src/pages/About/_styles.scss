@@ -1,4 +1,4 @@
-.me-image {
+.me-image{
   height: 250px;
   left: 20rem;
   margin-top: 2rem;
@@ -7,10 +7,12 @@
   -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
 }
 
-.me-image:hover {
-  -webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
+
