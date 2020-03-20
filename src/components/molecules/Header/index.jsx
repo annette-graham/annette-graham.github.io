@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import jump from 'jump.js'
 
 import Logo from '../../atoms/Logo'
 import data from '../../../data.json'
@@ -19,7 +18,7 @@ let links = data.links.map(link => {
 })
 
 
-const Header = ({className}) => {
+const Header = ({ className }) => {
 
   return (
     <header className={`root ${className}`}>
