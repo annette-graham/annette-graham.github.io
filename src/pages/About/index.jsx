@@ -11,18 +11,11 @@ const About = () => {
         <Heading
           title='ABOUT ME HOLY MOLY'
         />
-        <div className="portrait" id="portrait">
-          <div className="fill cover-img"></div>
-            <div className="fill z-10 hover">
-              <div className="fill cover-img hover-img"></div>
-          </div>
-        </div>
-        <img alt="Sloth waving and saying hi" src={sloth} className='image hi-image' />
-        <div>
 
-        </div>
         <img alt="me" src='https://picsum.photos/id/237/250/250' className='image me-image' />
-       
+
+        <img alt="Sloth waving and saying hi" src={sloth} className='image hi-image' />
+
         <p>This is what I'm about aite</p>
         <br/>
         <p>I'm Annette. I am a software engineer working at the good old BBC lol.</p>
