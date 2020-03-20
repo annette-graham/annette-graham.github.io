@@ -3,8 +3,11 @@ import React from 'react'
 const Input = ({
     label, 
     name,
+    onChange,
+    placeholder,
     tag,
-    placeholder
+    type,
+    value
 }) => {
 
     const Tag = tag
@@ -14,11 +17,13 @@ const Input = ({
             <label classname='form-label'>{label}</label>
             <Tag 
                 className='form-input'
-                type="text"
+                type={type}
                 name={name} 
                 placeholder={placeholder}
+                value={value}
+                onChange={onChange}
             />
-        </div>
+        </div> 
 
     )
 }
