@@ -28,7 +28,7 @@ class Form extends React.Component {
 
     return (
         <div className='contact-form'>
-          <form onSubmit={e => this.handleSubmit(e)}>
+          <form name="contact" method="POST" data-netlify="true" onSubmit={e => this.handleSubmit(e)}>
             <div className='input-group'> 
                <Input
                 tag="input"
