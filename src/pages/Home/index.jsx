@@ -9,7 +9,7 @@ const Home = () => {
   const arr = ['I AM ANNETTE AND I AM A SOFTWARE ENGINEER OKAY.', <br/>, 'GOSH']
 
   return (
-    <section className="body home-body">
+    <section id="top" className="body home-body">
       <div className='home-content'>
         <img alt="Sloth doing tree pose" src={sloth} className='logoImage' />
         <Heading

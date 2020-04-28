@@ -29,3 +29,29 @@ body {
 .App-link {
   color: #09d3ac;
 }
+
+
+.top-scroller {
+  display: none;
+  position: fixed;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  bottom: 100px;
+  right: 100px;
+  border-radius: 50%;
+  background: #645F6B;
+  opacity: 0.75;
+  text-align: center;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.top-scroller:hover {
+  background: #645F6B;
+  opacity: 0.95;
+}
+
+.scroller-svg {
+  color: white;
+}
