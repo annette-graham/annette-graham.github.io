@@ -1,3 +1,8 @@
 .media-image {
-    padding: 8px;
+	padding: 80px;
+
+	&:hover {
+			background: #645F6B;
+			opacity: 0.95;
+	}
 }
