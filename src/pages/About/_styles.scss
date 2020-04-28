@@ -1,4 +1,10 @@
-.me-image{
+.about-container {
+  display: flex;
+}
+
+
+.me-image {
+  align-self: flex-start;
   height: 250px;
   left: 20rem;
   margin-top: 2rem;
