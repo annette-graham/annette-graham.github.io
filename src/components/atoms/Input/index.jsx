@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Input = ({
+		className,
     label, 
     name,
     onChange,
@@ -13,19 +14,18 @@ const Input = ({
     const Tag = tag
 
     return (
-        <div className='field'>
-            <label classname='form-label'>{label}</label>
-            <Tag 
-                className='form-input'
-                type={type}
-                name={name} 
-                placeholder={placeholder}
-                value={value}
-                onChange={onChange}
-            />
-        </div> 
-
-    )
+			<div className='field'>
+				<label className='form-label'>{label}</label>
+				<Tag 
+					className={className}
+					type={type}
+					name={name} 
+					placeholder={placeholder}
+					value={value}
+					onChange={onChange}
+				/>
+		</div>
+  )
 }
 
 export default Input
