@@ -11,10 +11,35 @@ const About = () => {
         <Heading
           title='ABOUT ME HOLY MOLY'
         />
-        <div className="about-container">
+        {/* <div className="about-container"> */}
           <div className="about-content">
-          <img alt="me" src='https://picsum.photos/id/237/250/250' className='image me-image' />
-          <img alt="Sloth waving and saying hi" src={sloth} className='image hi-image' />
+            <div className="about-images">
+            <img alt="me" src='https://picsum.photos/id/237/250/250' className='image me-image' />
+
+           {/* 
+              Can use react hooks!
+              useRef will access the dom html elements
+              Need a black and white version of the picture and pass as props to functional component
+              e.g: <TogglePic monoPic="/images/b+w.jpg" colorPic="/images/color.jpg"
+
+              then in TogglePic:
+              Import {useRef} in React import
+
+              const imageRef = useRef(null)
+              return (
+                  <img
+                    onMouseOver{() => {
+                      imageRef.current.src = colorPic
+                    }} 
+                    onMouseOut{() => {
+                      imageRef.current.src = monoPic
+                    }}
+                    ref={imageRef}
+                    src={monoPic}/>
+                )
+            */}
+            <img alt="Sloth waving and saying hi" src={sloth} className='image hi-image' />
+            </div>
           <div className="about-text">
             <p>This is what I'm about aite</p>
             <br/>
@@ -36,7 +61,7 @@ const About = () => {
           </div>
           </div>
         </div>
-      </div>   
+      {/* </div>    */}
     </section>
   )
 }
