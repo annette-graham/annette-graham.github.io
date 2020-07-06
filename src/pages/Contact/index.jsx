@@ -32,6 +32,7 @@ const Contact = () => {
         <div>
           <br/>
           <p>Built using Create React App, Contentful, and Netlify. All rights are totz reserved.</p>
+          <p>© 2020 Annette Graham</p>
         </div>
     </div>
     </section>
