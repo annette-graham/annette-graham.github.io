@@ -31,6 +31,7 @@ class Form extends React.Component {
           <form name="contact" method="POST" data-netlify="true" onSubmit={e => this.handleSubmit(e)}>
             <div className='input-group'> 
                <Input
+                className="standard form-input"
                 tag="input"
                 label="Name"
                 name="Name"
@@ -38,6 +39,7 @@ class Form extends React.Component {
                 onChange={e => this.handleChange(e)}
               />
               <Input
+                className="standard form-input"
                 label="Email"
                 name="Email"
                 placeholder="example@email.com"
@@ -46,6 +48,7 @@ class Form extends React.Component {
                 onChange={e => this.handleChange(e)}
               />
               <Input
+                className="form-input"
                 label="Message"
                 name="Message"
                 placeholder="Omg Annette U da sh!t. We must hire you. I'll pay you £100k"
@@ -57,6 +60,7 @@ class Form extends React.Component {
                 name="Submit"
                 tag="input"
                 type='submit'
+                className="submit form-input"
               />
             </div>
           </form>
