@@ -1,33 +1,12 @@
 .field {
-    color: #645f6b;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 3rem;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
+	color: #645f6b;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 3rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .form-label {
-    padding: 88px;
-    margin: 15px;
-}
-
-.form-input {
-    font-size: 16px;
-    margin-top: 10px;
-    max-width: 300px;
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-    // box-shadow: inset 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-textarea {
-    overflow: auto;
-    outline: none;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    // box-shadow: inset 2px 2px rgba(158, 158, 158, 0.4);
+  margin: 5px;
 }
